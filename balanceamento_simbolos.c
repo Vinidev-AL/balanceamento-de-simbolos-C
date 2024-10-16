@@ -42,10 +42,10 @@ int remover_topo(pilha **topo) {
     }
 
     pilha* aux = *topo;
-    int valor = (*topo)->simbolo;
+    char simbolo = (*topo)->simbolo;
     *topo = (*topo)->prox;
     free(aux);
-    return valor;
+    return simbolo;
 }
 
 int verificar_tipo(char simbolo) {
